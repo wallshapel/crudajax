@@ -5,10 +5,12 @@ const expresiones = {
 	//correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
 	//telefono: /^\d{7,14}$/ // 7 a 14 números.
 }
+
 const campos = {
 	usuario: false,
 	pass: false
 }
+
 function validarCampos(input) {
 	if (input.name == 'usuario') {
 		if (expresiones.usuario.test(input.value)) {
@@ -29,6 +31,7 @@ function validarCampos(input) {
 		}
 	}
 }
+
 function validarFormulario() {
 	let cont = 0;
 	if (campos.usuario)
@@ -49,6 +52,7 @@ function validarFormulario() {
 	} else
 		return false;
 }
+
 function inputCorrectoIncorrecto(input, estado) {
 	if (estado) {
 		input.classList.remove('inputIncorrecto');
