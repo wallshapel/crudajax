@@ -46,8 +46,10 @@ function validarFormulario() {
 	if (cont == 2) {
 		cont = 0;		
 		return true;
-	} else
+	} else {
+		console.log('Aún no puedes');
 		return false;
+	}
 }
 
 function inputCorrectoIncorrecto(input, estado) {
