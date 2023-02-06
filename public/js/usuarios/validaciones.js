@@ -46,7 +46,7 @@ function validarFormulario() {
 		--cont;
 		inputCorrectoIncorrecto(document.getElementById('pass'), false);
 	}
-	if (cont == 1) {
+	if (cont == 3 || cont == 2) {
 		cont = 0;		
 		return true;
 	} else
