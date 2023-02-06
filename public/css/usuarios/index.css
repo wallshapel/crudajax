@@ -1,0 +1,46 @@
+#principal {
+	margin: auto;
+	width: 1024px;
+}
+.resultadosValidacion0, .resultadosValidacion1 {
+	width: 35%;
+	padding: 10px;
+	border-radius: 5px;	
+	display: none;
+}
+.resultadosValidacion0 {
+	background-color: #ABE7BAFF;
+	color: #18A10BFF;
+}
+.resultadosValidacion1 {
+	background-color: #FFDBE0FF;
+	color: #FE4C52FF;
+}
+#resultadosValidacion ul li {
+	margin-top: 15px;
+}
+input, label {
+	margin: 1px;
+}
+input {
+	border-radius: 3px;
+	outline: none;
+}
+table {
+	width: 100%;
+	border-collapse: collapse;
+	border-radius: 3px;	
+}
+th {
+	background-color: #D6D6D6FF;
+	padding: 8px;
+}
+td {
+	padding: 5px;	
+}
+.inputCorrecto {
+	border: 2px solid #2ED02FFF;
+}
+.inputIncorrecto {
+	border: 2px solid #DA2429FF;
+}

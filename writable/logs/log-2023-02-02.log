@@ -1,0 +1,20 @@
+CRITICAL - 2023-02-02 02:40:39 --> Invalid file: "planitllas/cabecera.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('planitllas/cabecera.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('planitllas/cabecera', [], true)
+ 3 APPPATH\Controllers\Usuarios.php(9): view('planitllas/cabecera')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-02 02:41:04 --> Undefined variable $cabecera
+in APPPATH\Views\index.php on line 1.
+ 1 APPPATH\Views\index.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cabecera', 'APPPATH\\Views\\index.php', 1)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Usuarios.php(9): view('index')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
