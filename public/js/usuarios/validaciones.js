@@ -1,6 +1,9 @@
 const expresiones = {
 	usuario: /^[a-zA-Z][a-zA-Z0-9_-]{8,20}$/, // Letras, numeros, guión y guión_bajo. Como primer caracter solo permite letras.
 	pass: /^.{6,20}$/ // 6 a 20 caracteres.
+	//nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.	
+	//correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+	//telefono: /^\d{7,14}$/ // 7 a 14 números.
 }
 
 const campos = {
@@ -43,13 +46,11 @@ function validarFormulario() {
 		--cont;
 		inputCorrectoIncorrecto(document.getElementById('pass'), false);
 	}
-	if (cont == 2) {
+	if (cont == 1) {
 		cont = 0;		
 		return true;
-	} else {
-		console.log('Aún no puedes');
+	} else
 		return false;
-	}
 }
 
 function inputCorrectoIncorrecto(input, estado) {
