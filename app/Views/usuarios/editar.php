@@ -1,5 +1,5 @@
 <form action="#" method="post" name="formularioE" id="formularioE">
-	<input type="hidden" name="id" id="idUsuario<?=$usuario['id'];?>" value="<?=$usuario['id'];?>">
+	<input type="hidden" name="id" value="<?=$usuario['id'];?>">
 	<div>
 		<label for="usuario">Usuario: </label>
 		<input type="text" name="usuario" id="usuario" value="<?=$usuario['usuario'];?>">

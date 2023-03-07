@@ -94,7 +94,3 @@ tabla.addEventListener('click', (e) => {
 function listar() {
 	ajax('GET', BASE + 'listar', tabla);
 }
-function cerrarResultadosValidaciones() {
-	resultadosValidacion.innerHTML = '';
-	resultadosValidacion.style.display = 'none';
-}
